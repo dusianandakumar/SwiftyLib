@@ -10,7 +10,7 @@
 		9BC0E7682449F93000A808B8 /* SwiftyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC0E75E2449F93000A808B8 /* SwiftyLib.framework */; };
 		9BC0E76D2449F93000A808B8 /* SwiftyLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0E76C2449F93000A808B8 /* SwiftyLibTests.swift */; };
 		9BC0E76F2449F93000A808B8 /* SwiftyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC0E7612449F93000A808B8 /* SwiftyLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BC0E7792449F9C000A808B8 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0E7782449F9C000A808B8 /* NetStatus.swift */; };
+		9BC0E7792449F9C000A808B8 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0E7782449F9C000A808B8 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		9BC0E7672449F93000A808B8 /* SwiftyLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0E76C2449F93000A808B8 /* SwiftyLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibTests.swift; sourceTree = "<group>"; };
 		9BC0E76E2449F93000A808B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BC0E7782449F9C000A808B8 /* NetStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
+		9BC0E7782449F9C000A808B8 /* SwiftyLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 		9BC0E7602449F93000A808B8 /* SwiftyLib */ = {
 			isa = PBXGroup;
 			children = (
-				9BC0E7782449F9C000A808B8 /* NetStatus.swift */,
+				9BC0E7782449F9C000A808B8 /* SwiftyLib.swift */,
 				9BC0E7612449F93000A808B8 /* SwiftyLib.h */,
 				9BC0E7622449F93000A808B8 /* Info.plist */,
 			);
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC0E7792449F9C000A808B8 /* NetStatus.swift in Sources */,
+				9BC0E7792449F9C000A808B8 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -354,6 +354,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +381,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
