@@ -10,6 +10,7 @@
 		9BC0E7682449F93000A808B8 /* SwiftyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC0E75E2449F93000A808B8 /* SwiftyLib.framework */; };
 		9BC0E76D2449F93000A808B8 /* SwiftyLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0E76C2449F93000A808B8 /* SwiftyLibTests.swift */; };
 		9BC0E76F2449F93000A808B8 /* SwiftyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC0E7612449F93000A808B8 /* SwiftyLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC0E7792449F9C000A808B8 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0E7782449F9C000A808B8 /* NetStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9BC0E7672449F93000A808B8 /* SwiftyLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0E76C2449F93000A808B8 /* SwiftyLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibTests.swift; sourceTree = "<group>"; };
 		9BC0E76E2449F93000A808B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC0E7782449F9C000A808B8 /* NetStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		9BC0E7602449F93000A808B8 /* SwiftyLib */ = {
 			isa = PBXGroup;
 			children = (
+				9BC0E7782449F9C000A808B8 /* NetStatus.swift */,
 				9BC0E7612449F93000A808B8 /* SwiftyLib.h */,
 				9BC0E7622449F93000A808B8 /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					9BC0E75D2449F93000A808B8 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					9BC0E7662449F93000A808B8 = {
 						CreatedOnToolsVersion = 11.4;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC0E7792449F9C000A808B8 /* NetStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		9BC0E7732449F93000A808B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F4E5RAA9LC;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.tslc.casheapp.ios.SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		9BC0E7742449F93000A808B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F4E5RAA9LC;
@@ -388,6 +396,7 @@
 		9BC0E7762449F93000A808B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4E5RAA9LC;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
@@ -406,6 +415,7 @@
 		9BC0E7772449F93000A808B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4E5RAA9LC;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
